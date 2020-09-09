@@ -16,5 +16,4 @@ product.save
 product = Product.new({name: "Sonic Screwdriver", price: 9, description: "The Doctor's sciencey magic wand to get out of tight spots. Note: does not work on wood", image_path: "https://dyn0.media.forbiddenplanet.com/products/28577492.jpg"})
 product.save
 
-product = Product.new({name: "Yoda sleeping bag", price: 40, description: "For real", image_path: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png"})
-product.save
+Product.create({name: "Yoda sleeping bag", price: 40, description: "For real", image_path: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png"})
