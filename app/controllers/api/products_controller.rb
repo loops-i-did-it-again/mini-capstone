@@ -16,7 +16,7 @@ class Api::ProductsController < ApplicationController
     if @product.save #happy path
       render "show.json.jb"
     else #sad path
-      render json: { errors: @product.errors.full_messages }, status: 422
+      render json: { errors: @product.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
