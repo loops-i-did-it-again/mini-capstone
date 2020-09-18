@@ -19,7 +19,6 @@ class Product < ApplicationRecord
     end
   }
 
-
   # instance method/model method
   def is_discounted?
     price <= 10
