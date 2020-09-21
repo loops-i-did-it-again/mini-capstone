@@ -33,7 +33,6 @@ class Api::ProductsController < ApplicationController
     @product = Product.new(
       name: params[:name],
       price: params[:price],
-      image_path: params[:image_path],
       description: params[:description],
       quantity: params[:quantity]
     )
@@ -53,7 +52,6 @@ class Api::ProductsController < ApplicationController
     @product = Product.find_by(id: params[:id])
     @product.name = params[:name] || @product.name
     @product.price = params[:price] || @product.price
-    @product.image_path = params[:image_path] || @product.image_path
     @product.description = params[:description] || @product.description
     @product.quantity = params[:quantity] || @product.quantity
     if @product.save #happy path

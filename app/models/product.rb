@@ -2,14 +2,15 @@ class Product < ApplicationRecord
 
   # validates :name, uniqueness: true, presence: true
   # validates :description, length: { in: 10..500 }
-  # validates :image_path, presence: true
   # validates :price, numericality: { greater_than: 0 }
   # validates :quantity, numericality: { greater_than: 0 }
 
   # association method (instance method)
-  def supplier
-    Supplier.find_by(id: supplier_id)
-  end
+  belongs_to :supplier
+  # def supplier
+  #   Supplier.find_by(id: supplier_id)
+  # end
+  has_many :images
 
   # class method
   scope :title_search, -> (search_term) { where("name iLIKE ?", "%#{search_term}%") }
