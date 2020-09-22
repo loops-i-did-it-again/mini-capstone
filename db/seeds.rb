@@ -10,11 +10,11 @@ Product.create({supplier_id: 2, name: "DnD Dice set", price: "57.50", descriptio
 Product.create({supplier_id: 1, name: "Sonic Screwdriver", price: "9.99", description: "The Doctor's sciencey magic wand to get out of tight spots. Note: does not work on wood", quantity: 12})
 Product.create({supplier_id: 3, name: "Yoda sleeping bag", price: "40.00", description: "For real", quantity: 4})
 
-Image.create(product_id: 1, url: "http://s32.postimg.org/6mceui22t/wnyx_mug.png")
+Image.create(product_id: 1, url: "https://images-na.ssl-images-amazon.com/images/I/41961kFogkL._SY355_.jpg")
 Image.create(product_id: 2, url: "http://www.notcot.com/images/guide.gif")
 Image.create(product_id: 3, url: "http://25.media.tumblr.com/d2456964024018fd930338c099371104/tumblr_n2m73lTx2Q1svn82uo1_400.gif")
 Image.create(product_id: 3, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lightsaber%2C_silver_hilt%2C_blue_blade.png/220px-Lightsaber%2C_silver_hilt%2C_blue_blade.png")
 Image.create(product_id: 4, url: "http://cdn.shopify.com/s/files/1/0289/1534/products/MalPistol_MP-1_1756x988_e53f9448-81ec-41de-9369-4cbad64f18f5_1024x1024.jpg?v=1401915776")
 Image.create(product_id: 5, url: "https://s-media-cache-ak0.pinimg.com/736x/9c/15/7b/9c157bea5331463f9c539cbce739a4b8.jpg")
-Image.create(product_id: 6, url: "http://www.thinkgeek.com/images/products/zoom/imkj_12th_doc_sonic_screw_remote.jpg")
+Image.create(product_id: 6, url: "https://merchandise.thedoctorwhosite.co.uk/wp-content/uploads/wand-10th-1.jpg")
 Image.create(product_id: 7, url: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png")
