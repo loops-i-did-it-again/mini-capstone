@@ -13,6 +13,7 @@ class Product < ApplicationRecord
   has_many :images
   has_many :orders
   has_many :category_products
+  has_many :categories, through: :category_products
 
   # class method
   scope :title_search, -> (search_term) { where("name iLIKE ?", "%#{search_term}%") }
